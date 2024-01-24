@@ -1,5 +1,3 @@
-
-
 class getConsume():
 
   def __init__(self):
@@ -62,4 +60,3 @@ c.printOutputData()
 
   
    
-
