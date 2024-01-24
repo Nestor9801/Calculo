@@ -37,6 +37,10 @@ class CalculoSolar():
     self.module = float(input("Potencia del modulo:"))
     self.n_module = self.pfv/(self.module/self.d_number)
     return self.n_module
+    
+  def getgeneration(self):
+    self.gen1 = self.n_module*self.module*self.hourpi
+    return self.gen1
 
 
   def printOutputData(self):
@@ -45,6 +49,7 @@ class CalculoSolar():
     print("Energia requerida:",self.energy)
     print("PFV:", self.pfv)
     print("Numero de modulos:",self.n_module)
+    print("Generacion diaria:", self.gen1)
 
 #### First class used
 consume = getConsume()
@@ -56,6 +61,7 @@ c.getAvgProm()
 c.getenergy()
 c.getpfv()
 c.getmodule()
+c.getgeneration()
 c.printOutputData()
 
   
